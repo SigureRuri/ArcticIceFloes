@@ -7,6 +7,7 @@ import org.bukkit.entity.Entity
 import org.bukkit.entity.LivingEntity
 import org.bukkit.inventory.EquipmentSlot
 import org.bukkit.inventory.ItemStack
+import org.bukkit.potion.PotionEffect
 
 abstract class AIFLivingEntity(id: ArcticIceFloesEntityId) : AIFEntity(id) {
 
@@ -36,6 +37,8 @@ abstract class AIFLivingEntity(id: ArcticIceFloesEntityId) : AIFEntity(id) {
 
     open val equipmentsDropChance: Map<EquipmentSlot, Float> = emptyMap()
 
+    open val potionEffects: List<PotionEffect> = emptyList()
+
     override fun applyEntity(entity: Entity) {
         super.applyEntity(entity)
 
@@ -61,6 +64,8 @@ abstract class AIFLivingEntity(id: ArcticIceFloesEntityId) : AIFEntity(id) {
         equipmentsDropChance[EquipmentSlot.CHEST]?.let { entity.equipment?.chestplateDropChance = it }
         equipmentsDropChance[EquipmentSlot.LEGS]?.let { entity.equipment?.leggingsDropChance = it }
         equipmentsDropChance[EquipmentSlot.FEET]?.let { entity.equipment?.bootsDropChance = it }
+
+        entity.addPotionEffects(potionEffects)
     }
 
 }
