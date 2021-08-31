@@ -1,0 +1,5 @@
+name: ArcticIceFloes
+version: '${version}'
+main: com.github.sigureruri.arcticicefloes.ArcticIceFloes
+api-version: 1.17
+authors: [ SigureRuri ]
