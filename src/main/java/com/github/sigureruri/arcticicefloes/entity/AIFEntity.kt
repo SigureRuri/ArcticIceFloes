@@ -1,9 +1,12 @@
 package com.github.sigureruri.arcticicefloes.entity
 
+import com.github.sigureruri.arcticicefloes.ArcticIceFloes
 import org.bukkit.Location
+import org.bukkit.NamespacedKey
 import org.bukkit.entity.Entity
 import org.bukkit.entity.Player
 import org.bukkit.event.entity.EntityDamageEvent
+import org.bukkit.persistence.PersistentDataType
 
 abstract class AIFEntity(val id: ArcticIceFloesEntityId) {
 
@@ -49,12 +52,17 @@ abstract class AIFEntity(val id: ArcticIceFloesEntityId) {
         entity.isGlowing = isGlowing
         entity.isVisualFire = isVisualFire
         scoreboardTags.forEach { entity.addScoreboardTag(it) }
-
     }
 
     fun spawn(location: Location): Boolean {
         val entity = spawnBaseEntity(location)?.apply {
             applyEntity(this)
+
+            persistentDataContainer.set(
+                NamespacedKey(ArcticIceFloes.plugin, "id"),
+                PersistentDataType.STRING,
+                id.toString()
+            )
         }
         return entity != null
     }
