@@ -39,6 +39,10 @@ abstract class AIFLivingEntity(id: ArcticIceFloesEntityId) : AIFEntity(id) {
 
     open val potionEffects: List<PotionEffect> = emptyList()
 
+    open fun shootBow(event: ShootBowEvent) {}
+
+    open fun breed(event: BreedEvent) {}
+
     override fun applyEntity(entity: Entity) {
         super.applyEntity(entity)
 
@@ -67,5 +71,26 @@ abstract class AIFLivingEntity(id: ArcticIceFloesEntityId) : AIFEntity(id) {
 
         entity.addPotionEffects(potionEffects)
     }
+
+    data class ShootBowEvent(
+        val entity: LivingEntity,
+        val consumable: ItemStack?,
+        val bow: ItemStack?,
+        val force: Float,
+        val hand: EquipmentSlot,
+        var projectile: Entity,
+        var shouldConsumeItem: Boolean,
+        var isCancelled: Boolean
+    )
+
+    data class BreedEvent(
+        val entity: LivingEntity,
+        val mother: LivingEntity,
+        val father: LivingEntity,
+        val breeder: LivingEntity?,
+        val bredWith: ItemStack?,
+        var experience: Int,
+        var isCancelled: Boolean
+    )
 
 }

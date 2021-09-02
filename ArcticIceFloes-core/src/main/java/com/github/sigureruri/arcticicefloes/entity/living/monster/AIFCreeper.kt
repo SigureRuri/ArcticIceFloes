@@ -5,6 +5,8 @@ import org.bukkit.Location
 import org.bukkit.entity.Creeper
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
+import org.bukkit.entity.LightningStrike
+import org.bukkit.event.entity.CreeperPowerEvent
 
 abstract class AIFCreeper(
     id: ArcticIceFloesEntityId
@@ -15,6 +17,10 @@ abstract class AIFCreeper(
     open val explosionRadius = 3
 
     open val isPowered = false
+
+    open fun powered(event: PoweredEvent) {}
+
+    open fun explode(event: ExplodeEvent) {}
 
     override fun spawnBaseEntity(location: Location): Entity? =
         location.world?.spawnEntity(location, EntityType.CREEPER)
@@ -28,5 +34,9 @@ abstract class AIFCreeper(
         entity.explosionRadius = explosionRadius
         entity.isPowered = isPowered
     }
+
+    data class PoweredEvent(val entity: Creeper, val lightning: LightningStrike?, val cause: CreeperPowerEvent.PowerCause, var isCancelled: Boolean)
+
+    data class ExplodeEvent(val entity: Creeper, val location: Location, var yield: Float, var isCancelled: Boolean)
 
 }

@@ -5,7 +5,7 @@ import org.bukkit.Location
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 
-abstract class AIFEvoker(id: ArcticIceFloesEntityId) : AIFIllager(id) {
+abstract class AIFEvoker(id: ArcticIceFloesEntityId) : AIFSpellcaster(id) {
 
     override fun spawnBaseEntity(location: Location): Entity? =
         location.world?.spawnEntity(location, EntityType.EVOKER)

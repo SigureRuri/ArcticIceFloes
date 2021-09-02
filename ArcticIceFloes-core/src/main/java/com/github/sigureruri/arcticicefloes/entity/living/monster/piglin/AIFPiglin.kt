@@ -6,6 +6,7 @@ import org.bukkit.Material
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Piglin
+import org.bukkit.inventory.ItemStack
 
 abstract class AIFPiglin(id: ArcticIceFloesEntityId) : AIFAbstractPiglin(id) {
 
@@ -16,6 +17,8 @@ abstract class AIFPiglin(id: ArcticIceFloesEntityId) : AIFAbstractPiglin(id) {
     open val barterList: Set<Material> = emptySet()
 
     open val interestList: Set<Material> = emptySet()
+
+    open fun barter(event: BarterEvent) {}
 
     override fun spawnBaseEntity(location: Location): Entity? =
         location.world?.spawnEntity(location, EntityType.PIGLIN)
@@ -30,5 +33,12 @@ abstract class AIFPiglin(id: ArcticIceFloesEntityId) : AIFAbstractPiglin(id) {
         barterList.forEach { entity.addBarterMaterial(it) }
         interestList.forEach { entity.addMaterialOfInterest(it) }
     }
+
+    data class BarterEvent(
+        val entity: Piglin,
+        val input: ItemStack,
+        val outcome: List<ItemStack>,
+        var isCancelled: Boolean
+    )
 
 }

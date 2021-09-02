@@ -10,6 +10,8 @@ abstract class AIFZombifiedPiglin(id: ArcticIceFloesEntityId) : AIFZombie(id) {
 
     open val isAngry = false
 
+    open fun anger(event: AngerEvent) {}
+
     override fun spawnBaseEntity(location: Location): Entity? =
         location.world?.spawnEntity(location, EntityType.ZOMBIFIED_PIGLIN)
 
@@ -20,5 +22,12 @@ abstract class AIFZombifiedPiglin(id: ArcticIceFloesEntityId) : AIFZombie(id) {
 
         entity.isAngry = isAngry
     }
+
+    data class AngerEvent(
+        val entity: PigZombie,
+        var newAnger: Int,
+        val target: Entity?,
+        var isCancelled: Boolean
+    )
 
 }

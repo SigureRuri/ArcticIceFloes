@@ -9,9 +9,9 @@ import org.bukkit.entity.Slime
 
 abstract class AIFSlime(id: ArcticIceFloesEntityId) : AIFMob(id) {
 
-    // TODO: 分裂可能かどうかもあったほうがいい
-
     open val size = 3
+
+    open fun split(event: SplitEvent) {}
 
     override fun spawnBaseEntity(location: Location): Entity? =
         location.world?.spawnEntity(location, EntityType.SLIME)
@@ -23,5 +23,7 @@ abstract class AIFSlime(id: ArcticIceFloesEntityId) : AIFMob(id) {
 
         entity.size = size
     }
+
+    data class SplitEvent(val entity: Slime, var count: Int, var isCancelled: Boolean)
 
 }
