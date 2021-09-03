@@ -1,7 +1,7 @@
 package com.github.sigureruri.arcticicefloes.entity.living
 
 import com.github.sigureruri.arcticicefloes.entity.AIFEntity
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import com.github.sigureruri.arcticicefloes.loottable.AIFLootTable
 import org.bukkit.attribute.Attribute
 import org.bukkit.entity.Entity
@@ -10,7 +10,7 @@ import org.bukkit.inventory.EquipmentSlot
 import org.bukkit.inventory.ItemStack
 import org.bukkit.potion.PotionEffect
 
-abstract class AIFLivingEntity(id: ArcticIceFloesEntityId) : AIFEntity(id) {
+abstract class AIFLivingEntity(id: AIFEntityId) : AIFEntity(id) {
 
     open val hasAI = true
 

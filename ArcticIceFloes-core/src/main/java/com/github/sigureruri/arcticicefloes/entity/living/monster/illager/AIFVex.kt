@@ -1,13 +1,13 @@
 package com.github.sigureruri.arcticicefloes.entity.living.monster.illager
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import com.github.sigureruri.arcticicefloes.entity.living.AIFMob
 import org.bukkit.Location
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Vex
 
-abstract class AIFVex(id: ArcticIceFloesEntityId) : AIFMob(id) {
+abstract class AIFVex(id: AIFEntityId) : AIFMob(id) {
 
     open val isCharging = false
 

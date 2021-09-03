@@ -1,6 +1,6 @@
 package com.github.sigureruri.arcticicefloes.entity.living.monster.zombie
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import com.github.sigureruri.arcticicefloes.entity.living.monster.AIFMonster
 import org.bukkit.Location
 import org.bukkit.entity.Ageable
@@ -8,7 +8,7 @@ import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Zombie
 
-abstract class AIFZombie(id: ArcticIceFloesEntityId) : AIFMonster(id) {
+abstract class AIFZombie(id: AIFEntityId) : AIFMonster(id) {
 
     open val isBaby = false
 

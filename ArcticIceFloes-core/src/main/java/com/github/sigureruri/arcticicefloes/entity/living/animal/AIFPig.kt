@@ -1,12 +1,12 @@
 package com.github.sigureruri.arcticicefloes.entity.living.animal
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.Location
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Pig
 
-abstract class AIFPig(id: ArcticIceFloesEntityId) : AIFAnimal(id) {
+abstract class AIFPig(id: AIFEntityId) : AIFAnimal(id) {
 
     open val hasSaddle = false
 

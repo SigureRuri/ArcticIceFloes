@@ -1,6 +1,6 @@
 package com.github.sigureruri.arcticicefloes
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityRegistry
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityRegistry
 import com.github.sigureruri.arcticicefloes.event.TickEvent
 import com.github.sigureruri.arcticicefloes.listener.AnimalListener
 import com.github.sigureruri.arcticicefloes.listener.CreeperListener
@@ -21,7 +21,7 @@ object ArcticIceFloesApi {
     lateinit var plugin: JavaPlugin
         private set
 
-    lateinit var entityRegistry: ArcticIceFloesEntityRegistry
+    lateinit var entityRegistry: AIFEntityRegistry
         private set
 
     lateinit var NMS: NMS
@@ -35,7 +35,7 @@ object ArcticIceFloesApi {
         plugin = javaPlugin
         NMS = nms
 
-        entityRegistry = ArcticIceFloesEntityRegistry()
+        entityRegistry = AIFEntityRegistry()
 
         listOf(
             EntityListener(),

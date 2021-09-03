@@ -1,6 +1,6 @@
 package com.github.sigureruri.arcticicefloes.entity.living.animal
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.DyeColor
 import org.bukkit.Location
 import org.bukkit.entity.Entity
@@ -9,7 +9,7 @@ import org.bukkit.entity.Sheep
 import org.bukkit.inventory.EquipmentSlot
 import org.bukkit.inventory.ItemStack
 
-abstract class AIFSheep(id: ArcticIceFloesEntityId) : AIFAnimal(id) {
+abstract class AIFSheep(id: AIFEntityId) : AIFAnimal(id) {
 
     abstract val color: DyeColor
 

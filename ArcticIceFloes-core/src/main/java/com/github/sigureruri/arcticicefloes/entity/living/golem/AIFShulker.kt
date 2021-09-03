@@ -1,6 +1,6 @@
 package com.github.sigureruri.arcticicefloes.entity.living.golem
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.DyeColor
 import org.bukkit.Location
 import org.bukkit.block.BlockFace
@@ -8,7 +8,7 @@ import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Shulker
 
-abstract class AIFShulker(id: ArcticIceFloesEntityId) : AIFGolem(id) {
+abstract class AIFShulker(id: AIFEntityId) : AIFGolem(id) {
 
     abstract val color: DyeColor
 

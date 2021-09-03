@@ -1,12 +1,12 @@
 package com.github.sigureruri.arcticicefloes.entity.living.animal
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.Location
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Panda
 
-abstract class AIFPanda(id: ArcticIceFloesEntityId) : AIFAnimal(id) {
+abstract class AIFPanda(id: AIFEntityId) : AIFAnimal(id) {
 
     abstract val mainGene: Panda.Gene
 

@@ -1,12 +1,12 @@
 package com.github.sigureruri.arcticicefloes.entity.living.animal.water
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.Location
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.GlowSquid
 
-abstract class AIFGlowSquid(id: ArcticIceFloesEntityId) : AIFWaterAnimal(id) {
+abstract class AIFGlowSquid(id: AIFEntityId) : AIFWaterAnimal(id) {
 
     open val darkTicksRemaining = 0
 

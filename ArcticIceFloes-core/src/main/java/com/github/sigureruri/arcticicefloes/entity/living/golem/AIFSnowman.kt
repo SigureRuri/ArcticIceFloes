@@ -1,12 +1,12 @@
 package com.github.sigureruri.arcticicefloes.entity.living.golem
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.Location
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Snowman
 
-abstract class AIFSnowman(id: ArcticIceFloesEntityId) : AIFGolem(id) {
+abstract class AIFSnowman(id: AIFEntityId) : AIFGolem(id) {
 
     open val isDerp = false
 

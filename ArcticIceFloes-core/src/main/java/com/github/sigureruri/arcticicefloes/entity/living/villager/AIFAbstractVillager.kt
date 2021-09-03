@@ -1,12 +1,12 @@
 package com.github.sigureruri.arcticicefloes.entity.living.villager
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import com.github.sigureruri.arcticicefloes.entity.living.AIFAgeable
 import org.bukkit.entity.AbstractVillager
 import org.bukkit.entity.Entity
 import org.bukkit.inventory.ItemStack
 
-abstract class AIFAbstractVillager(id: ArcticIceFloesEntityId) : AIFAgeable(id) {
+abstract class AIFAbstractVillager(id: AIFEntityId) : AIFAgeable(id) {
 
     open val ageLock = true
 

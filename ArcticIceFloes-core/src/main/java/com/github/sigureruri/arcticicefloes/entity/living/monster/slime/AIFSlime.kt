@@ -1,13 +1,13 @@
 package com.github.sigureruri.arcticicefloes.entity.living.monster.slime
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import com.github.sigureruri.arcticicefloes.entity.living.AIFMob
 import org.bukkit.Location
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Slime
 
-abstract class AIFSlime(id: ArcticIceFloesEntityId) : AIFMob(id) {
+abstract class AIFSlime(id: AIFEntityId) : AIFMob(id) {
 
     open val size = 3
 

@@ -1,12 +1,12 @@
 package com.github.sigureruri.arcticicefloes.entity.living.animal
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.Location
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Goat
 
-abstract class AIFGoat(id: ArcticIceFloesEntityId) : AIFAnimal(id) {
+abstract class AIFGoat(id: AIFEntityId) : AIFAnimal(id) {
 
     open val isScreaming = false
 

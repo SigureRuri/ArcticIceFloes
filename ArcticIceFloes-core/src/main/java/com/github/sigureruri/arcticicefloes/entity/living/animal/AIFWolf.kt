@@ -1,13 +1,13 @@
 package com.github.sigureruri.arcticicefloes.entity.living.animal
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.DyeColor
 import org.bukkit.Location
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Wolf
 
-abstract class AIFWolf(id: ArcticIceFloesEntityId) : AIFTameableAnimal(id) {
+abstract class AIFWolf(id: AIFEntityId) : AIFTameableAnimal(id) {
 
     abstract val collarColor: DyeColor
 

@@ -1,6 +1,6 @@
 package com.github.sigureruri.arcticicefloes.entity
 
-class ArcticIceFloesEntityId private constructor(
+class AIFEntityId private constructor(
     private val id: String
 ) {
 
@@ -14,7 +14,7 @@ class ArcticIceFloesEntityId private constructor(
         if (this === other) return true
         if (javaClass != other?.javaClass) return false
 
-        other as ArcticIceFloesEntityId
+        other as AIFEntityId
 
         if (id != other.id) return false
 
@@ -31,7 +31,7 @@ class ArcticIceFloesEntityId private constructor(
         private val PATTERN = "[a-z_0-9]+".toRegex()
 
         @JvmStatic
-        fun of(id: String) = ArcticIceFloesEntityId(id)
+        fun of(id: String) = AIFEntityId(id)
 
     }
 

@@ -1,13 +1,13 @@
 package com.github.sigureruri.arcticicefloes.entity.living.animal.horse
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.Location
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Llama
 import org.bukkit.inventory.ItemStack
 
-abstract class AIFLlama(id: ArcticIceFloesEntityId) : AIFChestedHorse(id) {
+abstract class AIFLlama(id: AIFEntityId) : AIFChestedHorse(id) {
 
     abstract val color: Llama.Color
 

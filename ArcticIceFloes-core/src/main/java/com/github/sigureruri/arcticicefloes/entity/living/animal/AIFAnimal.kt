@@ -1,12 +1,12 @@
 package com.github.sigureruri.arcticicefloes.entity.living.animal
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import com.github.sigureruri.arcticicefloes.entity.living.AIFAgeable
 import org.bukkit.entity.Animals
 import org.bukkit.entity.Entity
 import org.bukkit.entity.HumanEntity
 
-abstract class AIFAnimal(id: ArcticIceFloesEntityId) : AIFAgeable(id) {
+abstract class AIFAnimal(id: AIFEntityId) : AIFAgeable(id) {
 
     open val ageLock = true
 

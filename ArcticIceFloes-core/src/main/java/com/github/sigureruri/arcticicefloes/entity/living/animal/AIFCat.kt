@@ -1,13 +1,13 @@
 package com.github.sigureruri.arcticicefloes.entity.living.animal
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.DyeColor
 import org.bukkit.Location
 import org.bukkit.entity.Cat
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 
-abstract class AIFCat(id: ArcticIceFloesEntityId) : AIFTameableAnimal(id) {
+abstract class AIFCat(id: AIFEntityId) : AIFTameableAnimal(id) {
 
     abstract val catType: Cat.Type
 

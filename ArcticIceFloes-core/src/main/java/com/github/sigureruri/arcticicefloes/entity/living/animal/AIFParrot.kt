@@ -1,12 +1,12 @@
 package com.github.sigureruri.arcticicefloes.entity.living.animal
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.Location
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Parrot
 
-abstract class AIFParrot(id: ArcticIceFloesEntityId) : AIFTameableAnimal(id) {
+abstract class AIFParrot(id: AIFEntityId) : AIFTameableAnimal(id) {
 
     abstract val variant: Parrot.Variant
 

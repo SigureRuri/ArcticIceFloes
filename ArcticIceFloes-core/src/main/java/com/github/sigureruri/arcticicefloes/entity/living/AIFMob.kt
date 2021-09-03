@@ -1,12 +1,12 @@
 package com.github.sigureruri.arcticicefloes.entity.living
 
 import com.github.sigureruri.arcticicefloes.ArcticIceFloesApi
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import com.github.sigureruri.arcticicefloes.entity.living.ai.Goal
 import org.bukkit.entity.Entity
 import org.bukkit.entity.Mob
 
-abstract class AIFMob(id: ArcticIceFloesEntityId) : AIFLivingEntity(id) {
+abstract class AIFMob(id: AIFEntityId) : AIFLivingEntity(id) {
 
     open val useCustomAI = false
 

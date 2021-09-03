@@ -1,12 +1,12 @@
 package com.github.sigureruri.arcticicefloes.entity.living.animal.water.fish
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.Location
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.PufferFish
 
-abstract class AIFPufferFish(id: ArcticIceFloesEntityId) : AIFFish(id) {
+abstract class AIFPufferFish(id: AIFEntityId) : AIFFish(id) {
 
     val puffState = 0
 

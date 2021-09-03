@@ -1,12 +1,12 @@
 package com.github.sigureruri.arcticicefloes.entity.living.ambient
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.Location
 import org.bukkit.entity.Bat
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 
-abstract class AIFBat(id: ArcticIceFloesEntityId) : AIFAmbient(id) {
+abstract class AIFBat(id: AIFEntityId) : AIFAmbient(id) {
 
     open val isAwake = true
 

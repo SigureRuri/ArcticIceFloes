@@ -1,11 +1,11 @@
 package com.github.sigureruri.arcticicefloes.entity.living.monster.illager
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.Location
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 
-abstract class AIFEvoker(id: ArcticIceFloesEntityId) : AIFSpellcaster(id) {
+abstract class AIFEvoker(id: AIFEntityId) : AIFSpellcaster(id) {
 
     override fun spawnBaseEntity(location: Location): Entity? =
         location.world?.spawnEntity(location, EntityType.EVOKER)

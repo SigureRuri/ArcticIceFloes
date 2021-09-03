@@ -1,11 +1,11 @@
 package com.github.sigureruri.arcticicefloes.entity.living.animal.horse
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.entity.ChestedHorse
 import org.bukkit.entity.Entity
 import org.bukkit.inventory.ItemStack
 
-abstract class AIFChestedHorse(id: ArcticIceFloesEntityId) : AIFAbstractHorse(id) {
+abstract class AIFChestedHorse(id: AIFEntityId) : AIFAbstractHorse(id) {
 
     open val isCarryingChest = false
 

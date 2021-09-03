@@ -1,12 +1,12 @@
 package com.github.sigureruri.arcticicefloes.entity.living.animal
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.Location
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Rabbit
 
-abstract class AIFRabbit(id: ArcticIceFloesEntityId) : AIFAnimal(id) {
+abstract class AIFRabbit(id: AIFEntityId) : AIFAnimal(id) {
 
     abstract val rabbitType: Rabbit.Type
 

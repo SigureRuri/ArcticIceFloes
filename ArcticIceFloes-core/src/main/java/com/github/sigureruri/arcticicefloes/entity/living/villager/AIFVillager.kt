@@ -1,12 +1,12 @@
 package com.github.sigureruri.arcticicefloes.entity.living.villager
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.Location
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Villager
 
-abstract class AIFVillager(id: ArcticIceFloesEntityId) : AIFAbstractVillager(id) {
+abstract class AIFVillager(id: AIFEntityId) : AIFAbstractVillager(id) {
 
     abstract val profession: Villager.Profession
 

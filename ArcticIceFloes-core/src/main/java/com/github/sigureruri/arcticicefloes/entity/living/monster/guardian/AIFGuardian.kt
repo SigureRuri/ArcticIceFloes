@@ -1,13 +1,13 @@
 package com.github.sigureruri.arcticicefloes.entity.living.monster.guardian
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import com.github.sigureruri.arcticicefloes.entity.living.monster.AIFMonster
 import org.bukkit.Location
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Guardian
 
-abstract class AIFGuardian(id: ArcticIceFloesEntityId) : AIFMonster(id) {
+abstract class AIFGuardian(id: AIFEntityId) : AIFMonster(id) {
 
     open val hasLaser = false
 

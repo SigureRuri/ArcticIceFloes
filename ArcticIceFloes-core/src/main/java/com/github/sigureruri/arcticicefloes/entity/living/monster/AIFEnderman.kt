@@ -1,13 +1,13 @@
 package com.github.sigureruri.arcticicefloes.entity.living.monster
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.Location
 import org.bukkit.block.data.BlockData
 import org.bukkit.entity.Enderman
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 
-abstract class AIFEnderman(id: ArcticIceFloesEntityId) : AIFMonster(id) {
+abstract class AIFEnderman(id: AIFEntityId) : AIFMonster(id) {
 
     open val block: BlockData? = null
 

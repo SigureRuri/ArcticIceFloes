@@ -5,7 +5,7 @@ import org.bukkit.entity.EnderCrystal
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 
-abstract class AIFEnderCrystal(id: ArcticIceFloesEntityId) : AIFEntity(id) {
+abstract class AIFEnderCrystal(id: AIFEntityId) : AIFEntity(id) {
 
     open val isShowingBottom = true
 

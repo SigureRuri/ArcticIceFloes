@@ -1,10 +1,10 @@
 package com.github.sigureruri.arcticicefloes.entity.living
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.entity.Ageable
 import org.bukkit.entity.Entity
 
-abstract class AIFAgeable(id: ArcticIceFloesEntityId) : AIFMob(id) {
+abstract class AIFAgeable(id: AIFEntityId) : AIFMob(id) {
 
     open val isBaby = false
 

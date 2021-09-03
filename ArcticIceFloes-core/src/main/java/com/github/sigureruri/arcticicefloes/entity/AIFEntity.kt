@@ -13,7 +13,7 @@ import org.bukkit.event.entity.EntityRegainHealthEvent
 import org.bukkit.event.entity.EntityTransformEvent
 import org.bukkit.persistence.PersistentDataType
 
-abstract class AIFEntity(val id: ArcticIceFloesEntityId) {
+abstract class AIFEntity(val id: AIFEntityId) {
 
     open val name: String? = null
 

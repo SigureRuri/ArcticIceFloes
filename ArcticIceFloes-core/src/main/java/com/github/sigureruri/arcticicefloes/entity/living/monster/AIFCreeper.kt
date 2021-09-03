@@ -1,6 +1,6 @@
 package com.github.sigureruri.arcticicefloes.entity.living.monster
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.Location
 import org.bukkit.entity.Creeper
 import org.bukkit.entity.Entity
@@ -9,7 +9,7 @@ import org.bukkit.entity.LightningStrike
 import org.bukkit.event.entity.CreeperPowerEvent
 
 abstract class AIFCreeper(
-    id: ArcticIceFloesEntityId
+    id: AIFEntityId
 ) : AIFMonster(id) {
 
     open val fuseTicks = 30

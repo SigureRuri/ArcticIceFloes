@@ -1,13 +1,13 @@
 package com.github.sigureruri.arcticicefloes.entity.living.animal.water.fish
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.DyeColor
 import org.bukkit.Location
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.TropicalFish
 
-abstract class AIFTropicalFish(id: ArcticIceFloesEntityId) : AIFFish(id) {
+abstract class AIFTropicalFish(id: AIFEntityId) : AIFFish(id) {
 
     abstract val bodyColor: DyeColor
 

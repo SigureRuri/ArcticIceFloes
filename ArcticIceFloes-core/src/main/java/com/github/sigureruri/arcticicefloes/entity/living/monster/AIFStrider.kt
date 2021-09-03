@@ -1,13 +1,13 @@
 package com.github.sigureruri.arcticicefloes.entity.living.monster
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import com.github.sigureruri.arcticicefloes.entity.living.animal.AIFAnimal
 import org.bukkit.Location
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Strider
 
-abstract class AIFStrider(id: ArcticIceFloesEntityId) : AIFAnimal(id) {
+abstract class AIFStrider(id: AIFEntityId) : AIFAnimal(id) {
 
     open val hasSaddle = false
 

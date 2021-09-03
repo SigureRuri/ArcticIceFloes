@@ -1,13 +1,13 @@
 package com.github.sigureruri.arcticicefloes.entity.living.monster.zombie
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.Location
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Villager
 import org.bukkit.entity.ZombieVillager
 
-abstract class AIFZombieVillager(id: ArcticIceFloesEntityId) : AIFZombie(id) {
+abstract class AIFZombieVillager(id: AIFEntityId) : AIFZombie(id) {
 
     abstract val villagerProfession: Villager.Profession
 

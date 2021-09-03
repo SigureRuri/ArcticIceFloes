@@ -1,11 +1,11 @@
 package com.github.sigureruri.arcticicefloes.entity.living.animal
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.entity.AnimalTamer
 import org.bukkit.entity.Entity
 import org.bukkit.entity.Tameable
 
-abstract class AIFTameableAnimal(id: ArcticIceFloesEntityId) : AIFAnimal(id) {
+abstract class AIFTameableAnimal(id: AIFEntityId) : AIFAnimal(id) {
 
     val isTamed = false
 

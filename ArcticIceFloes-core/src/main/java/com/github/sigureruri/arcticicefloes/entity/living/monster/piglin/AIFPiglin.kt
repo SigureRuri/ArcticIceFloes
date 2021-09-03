@@ -1,6 +1,6 @@
 package com.github.sigureruri.arcticicefloes.entity.living.monster.piglin
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.Location
 import org.bukkit.Material
 import org.bukkit.entity.Entity
@@ -8,7 +8,7 @@ import org.bukkit.entity.EntityType
 import org.bukkit.entity.Piglin
 import org.bukkit.inventory.ItemStack
 
-abstract class AIFPiglin(id: ArcticIceFloesEntityId) : AIFAbstractPiglin(id) {
+abstract class AIFPiglin(id: AIFEntityId) : AIFAbstractPiglin(id) {
 
     open val isBaby = false
 

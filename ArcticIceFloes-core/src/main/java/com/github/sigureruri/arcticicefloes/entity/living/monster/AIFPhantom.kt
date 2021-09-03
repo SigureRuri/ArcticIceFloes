@@ -1,13 +1,13 @@
 package com.github.sigureruri.arcticicefloes.entity.living.monster
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import com.github.sigureruri.arcticicefloes.entity.living.AIFMob
 import org.bukkit.Location
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Phantom
 
-abstract class AIFPhantom(id: ArcticIceFloesEntityId) : AIFMob(id) {
+abstract class AIFPhantom(id: AIFEntityId) : AIFMob(id) {
 
     open val size = 0
 

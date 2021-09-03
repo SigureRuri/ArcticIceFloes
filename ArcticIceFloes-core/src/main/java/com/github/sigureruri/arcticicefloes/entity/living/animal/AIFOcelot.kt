@@ -1,12 +1,12 @@
 package com.github.sigureruri.arcticicefloes.entity.living.animal
 
-import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import org.bukkit.Location
 import org.bukkit.entity.Entity
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Ocelot
 
-abstract class AIFOcelot(id: ArcticIceFloesEntityId) : AIFAnimal(id) {
+abstract class AIFOcelot(id: AIFEntityId) : AIFAnimal(id) {
 
     val isTrusting = false
 
