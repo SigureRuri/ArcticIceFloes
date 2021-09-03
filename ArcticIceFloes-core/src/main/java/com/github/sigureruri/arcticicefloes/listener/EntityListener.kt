@@ -12,7 +12,6 @@ import org.bukkit.event.entity.EntityAirChangeEvent
 import org.bukkit.event.entity.EntityDamageByBlockEvent
 import org.bukkit.event.entity.EntityDamageByEntityEvent
 import org.bukkit.event.entity.EntityDamageEvent
-import org.bukkit.event.entity.EntityDeathEvent
 import org.bukkit.event.entity.EntityDropItemEvent
 import org.bukkit.event.entity.EntityInteractEvent
 import org.bukkit.event.entity.EntityPickupItemEvent
@@ -150,13 +149,6 @@ class EntityListener : Listener {
         val entity = event.entity
         val spawnEvent = AIFEntity.SpawnEvent(entity)
         AIFEntityHelper.getAIFEntityFromBukkitEntity(entity)?.spawn(spawnEvent)
-    }
-
-    @EventHandler(priority = EventPriority.NORMAL)
-    fun onDeath(event: EntityDeathEvent) {
-        val entity = event.entity
-        val deathEvent = AIFEntity.DeathEvent(entity)
-        AIFEntityHelper.getAIFEntityFromBukkitEntity(entity)?.death(deathEvent)
     }
 
 }

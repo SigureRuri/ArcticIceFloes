@@ -6,6 +6,7 @@ import org.bukkit.event.EventHandler
 import org.bukkit.event.EventPriority
 import org.bukkit.event.Listener
 import org.bukkit.event.entity.EntityBreedEvent
+import org.bukkit.event.entity.EntityDeathEvent
 import org.bukkit.event.entity.EntityShootBowEvent
 
 class LivingEntityListener : Listener {
@@ -48,6 +49,14 @@ class LivingEntityListener : Listener {
 
         event.experience = breedEvent.experience
         event.isCancelled = breedEvent.isCancelled
+    }
+
+    @EventHandler(priority = EventPriority.NORMAL)
+    fun onDeath(event: EntityDeathEvent) {
+        val entity = event.entity
+        val aifEntity = AIFEntityHelper.getAIFEntityFromBukkitEntity(entity) as? AIFLivingEntity ?: return
+        val deathEvent = AIFLivingEntity.DeathEvent(entity)
+        aifEntity.death(deathEvent)
     }
 
 }

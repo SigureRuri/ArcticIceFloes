@@ -43,6 +43,8 @@ abstract class AIFLivingEntity(id: ArcticIceFloesEntityId) : AIFEntity(id) {
 
     open fun breed(event: BreedEvent) {}
 
+    open fun death(event: DeathEvent) {}
+
     override fun applyEntity(entity: Entity) {
         super.applyEntity(entity)
 
@@ -92,5 +94,7 @@ abstract class AIFLivingEntity(id: ArcticIceFloesEntityId) : AIFEntity(id) {
         var experience: Int,
         var isCancelled: Boolean
     )
+
+    data class DeathEvent(val entity: Entity)
 
 }

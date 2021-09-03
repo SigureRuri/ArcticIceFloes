@@ -58,8 +58,6 @@ abstract class AIFEntity(val id: ArcticIceFloesEntityId) {
 
     open fun spawn(event: SpawnEvent) {}
 
-    open fun death(event: DeathEvent) {}
-
 
     abstract fun spawnBaseEntity(location: Location): Entity?
 
@@ -167,7 +165,5 @@ abstract class AIFEntity(val id: ArcticIceFloesEntityId) {
     )
 
     data class SpawnEvent(val entity: Entity)
-
-    data class DeathEvent(val entity: Entity)
 
 }
