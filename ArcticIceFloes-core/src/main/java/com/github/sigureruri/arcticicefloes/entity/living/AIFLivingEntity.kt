@@ -2,6 +2,7 @@ package com.github.sigureruri.arcticicefloes.entity.living
 
 import com.github.sigureruri.arcticicefloes.entity.AIFEntity
 import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityId
+import com.github.sigureruri.arcticicefloes.loottable.AIFLootTable
 import org.bukkit.attribute.Attribute
 import org.bukkit.entity.Entity
 import org.bukkit.entity.LivingEntity
@@ -38,6 +39,8 @@ abstract class AIFLivingEntity(id: ArcticIceFloesEntityId) : AIFEntity(id) {
     open val equipmentsDropChance: Map<EquipmentSlot, Float> = emptyMap()
 
     open val potionEffects: List<PotionEffect> = emptyList()
+
+    open val lootTable: AIFLootTable? = null
 
     open fun shootBow(event: ShootBowEvent) {}
 

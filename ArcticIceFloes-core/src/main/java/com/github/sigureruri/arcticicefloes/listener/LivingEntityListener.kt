@@ -57,6 +57,11 @@ class LivingEntityListener : Listener {
         val aifEntity = AIFEntityHelper.getAIFEntityFromBukkitEntity(entity) as? AIFLivingEntity ?: return
         val deathEvent = AIFLivingEntity.DeathEvent(entity)
         aifEntity.death(deathEvent)
+
+        aifEntity.lootTable?.let {
+            event.drops.clear()
+            event.drops.addAll(it.generateItems(entity))
+        }
     }
 
 }
