@@ -9,6 +9,8 @@ abstract class AIFEnderCrystal(id: ArcticIceFloesEntityId) : AIFEntity(id) {
 
     open val isShowingBottom = true
 
+    open fun explode(event: ExplodeEvent) {}
+
     override fun spawnBaseEntity(location: Location): Entity? =
         location.world?.spawnEntity(location, EntityType.ENDER_CRYSTAL)
 
@@ -19,5 +21,7 @@ abstract class AIFEnderCrystal(id: ArcticIceFloesEntityId) : AIFEntity(id) {
 
         entity.isShowingBottom = isShowingBottom
     }
+
+    data class ExplodeEvent(val entity: EnderCrystal, val location: Location, var yield: Float, var isCancelled: Boolean)
 
 }

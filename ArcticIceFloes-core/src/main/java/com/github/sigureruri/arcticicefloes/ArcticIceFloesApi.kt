@@ -4,6 +4,7 @@ import com.github.sigureruri.arcticicefloes.entity.ArcticIceFloesEntityRegistry
 import com.github.sigureruri.arcticicefloes.event.TickEvent
 import com.github.sigureruri.arcticicefloes.listener.AnimalListener
 import com.github.sigureruri.arcticicefloes.listener.CreeperListener
+import com.github.sigureruri.arcticicefloes.listener.EnderCrystalListener
 import com.github.sigureruri.arcticicefloes.listener.EntityListener
 import com.github.sigureruri.arcticicefloes.listener.LivingEntityListener
 import com.github.sigureruri.arcticicefloes.listener.PiglinListener
@@ -38,6 +39,7 @@ object ArcticIceFloesApi {
 
         listOf(
             EntityListener(),
+            EnderCrystalListener(),
             LivingEntityListener(),
             AnimalListener(),
             TameableAnimalListener(),
