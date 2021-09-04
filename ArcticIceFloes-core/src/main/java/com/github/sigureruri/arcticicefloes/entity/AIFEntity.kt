@@ -72,7 +72,7 @@ abstract class AIFEntity(val id: AIFEntityId) {
         scoreboardTags.forEach { entity.addScoreboardTag(it) }
     }
 
-    fun spawn(location: Location): Boolean {
+    fun spawn(location: Location): Entity? {
         val entity = spawnBaseEntity(location)?.apply {
             applyEntity(this)
 
@@ -82,7 +82,7 @@ abstract class AIFEntity(val id: AIFEntityId) {
                 id.toString()
             )
         }
-        return entity != null
+        return entity
     }
 
 
