@@ -1,5 +1,6 @@
 package com.github.sigureruri.arcticicefloes.entity.living
 
+import com.github.sigureruri.arcticicefloes.ArcticIceFloesApi
 import com.github.sigureruri.arcticicefloes.entity.AIFEntity
 import com.github.sigureruri.arcticicefloes.entity.AIFEntityId
 import com.github.sigureruri.arcticicefloes.loottable.AIFLootTable
@@ -64,7 +65,10 @@ abstract class AIFLivingEntity(id: AIFEntityId) : AIFEntity(id) {
         entity.isSwimming = isSwimming
         entity.removeWhenFarAway = removeWhenFarAway
 
-        attributes.forEach { entity.getAttribute(it.key)?.baseValue = it.value }
+        attributes.forEach { (attribute, value) ->
+            ArcticIceFloesApi.NMS.registerAttribute(entity, attribute)
+            entity.getAttribute(attribute)?.baseValue = value
+        }
 
         equipments.forEach { entity.equipment?.setItem(it.key, it.value) }
         equipmentsDropChance[EquipmentSlot.HAND]?.let { entity.equipment?.itemInMainHandDropChance = it }

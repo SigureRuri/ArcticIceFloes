@@ -4,7 +4,7 @@ import java.util.*
 
 abstract class Goal {
 
-    var flags = EnumSet.noneOf(Flag::class.java)
+    open var flags = EnumSet.noneOf(Flag::class.java)
         set(value) {
             flags.clear()
             field = value

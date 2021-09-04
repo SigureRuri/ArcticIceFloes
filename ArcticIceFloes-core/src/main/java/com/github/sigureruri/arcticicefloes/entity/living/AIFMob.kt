@@ -10,9 +10,9 @@ abstract class AIFMob(id: AIFEntityId) : AIFLivingEntity(id) {
 
     open val useCustomAI = false
 
-    open val goalSelectors: List<Pair<Int, Goal>> = emptyList()
+    open val goalSelectors: (Mob) -> List<Pair<Int, Goal>> = { emptyList() }
 
-    open val targetSelectors: List<Pair<Int, Goal>> = emptyList()
+    open val targetSelectors: (Mob) -> List<Pair<Int, Goal>> = { emptyList() }
 
     override fun applyEntity(entity: Entity) {
         super.applyEntity(entity)
@@ -21,10 +21,10 @@ abstract class AIFMob(id: AIFEntityId) : AIFLivingEntity(id) {
 
         if (useCustomAI) {
             ArcticIceFloesApi.NMS.clearAiGoals(entity)
-            goalSelectors.forEach {
+            goalSelectors(entity).forEach {
                 ArcticIceFloesApi.NMS.addGoalSelector(entity, it.first, it.second)
             }
-            targetSelectors.forEach {
+            targetSelectors(entity).forEach {
                 ArcticIceFloesApi.NMS.addGoalSelector(entity, it.first, it.second)
             }
         }

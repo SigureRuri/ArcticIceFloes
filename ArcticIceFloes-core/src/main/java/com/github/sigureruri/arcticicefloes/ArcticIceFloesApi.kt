@@ -16,7 +16,6 @@ import com.github.sigureruri.arcticicefloes.listener.TameableAnimalListener
 import com.github.sigureruri.arcticicefloes.listener.ZombifiedPiglinListener
 import com.github.sigureruri.arcticicefloes.nms.NMS
 import com.github.sigureruri.arcticicefloes.spawner.AIFSpawnerManager
-import com.github.sigureruri.arcticicefloes.spawner.SpawnerDebug
 import org.bukkit.plugin.java.JavaPlugin
 
 object ArcticIceFloesApi {
