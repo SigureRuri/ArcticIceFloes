@@ -3,3 +3,5 @@ version: '${version}'
 main: com.github.sigureruri.arcticicefloes.ArcticIceFloes
 api-version: 1.17
 authors: [ SigureRuri ]
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib:1.5.30
