@@ -4,9 +4,9 @@ class AIFEntityRegistry {
 
     private val map: MutableMap<AIFEntityId, AIFEntity> = mutableMapOf()
 
-    fun register(item: AIFEntity) {
-        if (contains(item.id)) throw IllegalArgumentException("The entity has already registered: ${item.id}")
-        map[item.id] = item
+    fun register(entity: AIFEntity) {
+        if (contains(entity.id)) throw IllegalArgumentException("The entity has already registered: ${entity.id}")
+        map[entity.id] = entity
     }
 
     fun get(id: AIFEntityId) =
